@@ -1,72 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MOTIENS</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="hero">
-    <div class="hero-content">
-      <div class="text">
-        <h1>Transforma tu equipo desde su núcleo</h1>
-        <p>Experiencias que despiertan el potencial interno de tu organización.</p>
-      </div>
-      <div class="logo-container">
-        <img src="logo.png" alt="Logo MOTIENS" class="logo-brush"/>
-      </div>
+    <div class="hero-text">
+      <h1>Activamos equipos desde el núcleo</h1>
+      <p>Facilitación estratégica y experiencial para transformar tu equipo desde adentro</p>
+    </div>
+    <div class="hero-logo">
+      <img src="logo.png" alt="MOTIENS logo" />
     </div>
   </header>
 
   <section class="services">
     <h2>Servicios</h2>
-    <div class="service-list">
-      <div class="service">
-        <img src="icons/refocus.svg" alt="Refocus"/>
+    <div class="cards">
+      <div class="card">
+        <img src="ojo.png" alt="Refocus" />
         <h3>Refocus</h3>
-        <p>Recupera el rumbo cuando el equipo ha perdido claridad o foco.</p>
+        <p>Redirige la mirada interna del equipo hacia su propósito compartido.</p>
         <button>Quiero este servicio</button>
       </div>
-      <div class="service">
-        <img src="icons/reshape.svg" alt="Reshape"/>
+      <div class="card">
+        <img src="diseno.png" alt="Reshape" />
         <h3>Reshape</h3>
-        <p>Cuando la forma de trabajo ya no funciona y hay que rediseñarla.</p>
+        <p>Rediseña las estructuras emocionales y operativas del equipo.</p>
         <button>Quiero este servicio</button>
       </div>
-      <div class="service">
-        <img src="icons/rebuild.svg" alt="Rebuild"/>
+      <div class="card">
+        <img src="transformacion.png" alt="Rebuild" />
         <h3>Rebuild</h3>
-        <p>Cuando hay fractura en la confianza o conflictos internos importantes.</p>
+        <p>Reconstruye la cohesión, comunicación y propósito colectivo.</p>
         <button>Quiero este servicio</button>
       </div>
     </div>
   </section>
 
-  <section class="methodology">
-    <h2>Metodología</h2>
-    <div class="circle-steps">
-      <div class="step">1. Diagnóstico</div>
-      <div class="step">2. Diseño</div>
-      <div class="step">3. Activación</div>
-      <div class="step">4. Sostenibilidad</div>
-    </div>
-    <div class="popup" id="popup">
-      <p>¿No sabes cuál servicio es ideal? <a href="#">Haz el test aquí</a>.</p>
-      <button onclick="document.getElementById('popup').style.display='none'">Cerrar</button>
+  <section class="metodologia">
+    <h2>Nuestra Metodología</h2>
+    <div class="circle">
+      <div class="step">Diagnóstico</div>
+      <div class="step">Diseño</div>
+      <div class="step">Activación</div>
+      <div class="step">Sostenibilidad</div>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contacto</h2>
-    <form action="https://formspree.io/f/xbjnzvvz" method="POST">
-      <input type="text" name="name" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu email" required>
-      <textarea name="message" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <section id="popup" class="popup">
+    <h2>Descubre tu servicio ideal</h2>
+    <p>Haz el test y encuentra el programa perfecto para tu equipo.</p>
+    <button onclick="document.getElementById('popup').style.display='none'">Cerrar</button>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
