@@ -1,57 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>MOTIENS</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-text">
+    <header>
+        <div class="text">
             <h1>Despertamos tu potencial</h1>
             <p>Facilitación estratégica y experiencial para transformar equipos desde su núcleo.</p>
         </div>
-        <div class="hero-logo">
-            <img src="logo.png" alt="Logo MOTIENS" />
+        <div class="logo">
+            <img src="logo.png" alt="Logo MOTIENS"/>
         </div>
     </header>
 
-    <section class="servicios" id="servicios">
+    <section id="servicios">
         <div class="servicio">
-            <img src="icono1.png" alt="Refocus">
+            <img src="grupo.png" alt="Refocus">
             <h2>Refocus</h2>
             <p>Redefiní el rumbo del equipo. Ideal para redefinir prioridades y alinear objetivos.</p>
-            <button onclick="mostrarFormulario()">Quiero este servicio</button>
+            <button>Quiero este servicio</button>
         </div>
         <div class="servicio">
-            <img src="icono2.png" alt="Reshape">
+            <img src="ojo.png" alt="Reshape">
             <h2>Reshape</h2>
             <p>Reconfigurá dinámicas internas. Ideal para conflictos o roles poco claros.</p>
-            <button onclick="mostrarFormulario()">Quiero este servicio</button>
+            <button>Quiero este servicio</button>
         </div>
     </section>
 
-    <section class="metodologia" id="metodologia">
+    <section id="metodologia">
         <h2>Nuestra metodología</h2>
         <div class="pasos">
-            <div class="paso"><img src="diagnostico.png" alt="Paso 1"><p>Paso 1</p></div>
-            <div class="paso"><img src="diseno.png" alt="Paso 2"><p>Paso 2</p></div>
-            <div class="paso"><img src="engranaje.png" alt="Paso 3"><p>Paso 3</p></div>
-            <div class="paso"><img src="transformacion.png" alt="Paso 4"><p>Paso 4</p></div>
+            <div class="paso"><img src="activacion.png" alt="Paso 1"/><p>Paso 1</p></div>
+            <div class="paso"><img src="diagnostico.png" alt="Paso 2"/><p>Paso 2</p></div>
+            <div class="paso"><img src="transformacion.png" alt="Paso 3"/><p>Paso 3</p></div>
+            <div class="paso"><img src="engranaje.png" alt="Paso 4"/><p>Paso 4</p></div>
         </div>
     </section>
 
-    <div class="popup" id="popup">
-        <form action="https://formspree.io/f/xbjnzvvz" method="POST">
-            <h2>Contáctanos</h2>
-            <input type="text" name="name" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu email" required>
-            <textarea name="message" placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-            <span class="cerrar" onclick="cerrarPopup()">X</span>
-        </form>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
