@@ -1,6 +1,12 @@
-// Mostrar pop-up de test después de 10 segundos
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("popup");
+  const closeBtn = document.getElementById("closePopup");
+
   setTimeout(() => {
-    alert('¿Qué servicio es ideal para tu equipo? (Este será un pop-up real pronto)');
+    popup.style.display = "flex";
   }, 10000);
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
 });
