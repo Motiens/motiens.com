@@ -1,1 +1,54 @@
-Contenido simulado para index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOTIENS</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Despertamos tu potencial</h1>
+      <p>Facilitación estratégica y experiencial para transformar equipos desde su núcleo.</p>
+    </div>
+    <img src="logo.png" class="logo brush-effect" alt="Logo MOTIENS">
+  </header>
+
+  <section id="servicios" class="servicios">
+    <div class="servicio">
+      <img src="icono1.png" alt="Ícono servicio 1">
+      <h2>Refocus</h2>
+      <p>Redefiní el rumbo del equipo. Ideal para redefinir prioridades y alinear objetivos.</p>
+      <button onclick="mostrarFormulario('Refocus')">Quiero este servicio</button>
+    </div>
+    <div class="servicio">
+      <img src="icono2.png" alt="Ícono servicio 2">
+      <h2>Reshape</h2>
+      <p>Reconfigurá dinámicas internas. Ideal para conflictos o roles poco claros.</p>
+      <button onclick="mostrarFormulario('Reshape')">Quiero este servicio</button>
+    </div>
+  </section>
+
+  <section id="metodologia" class="metodologia">
+    <h2>Nuestra metodología</h2>
+    <div class="circulo">
+      <img src="paso1.png" alt="Paso 1" title="Diagnóstico" />
+      <img src="paso2.png" alt="Paso 2" title="Diseño personalizado" />
+      <img src="paso3.png" alt="Paso 3" title="Activación" />
+      <img src="paso4.png" alt="Paso 4" title="Transformación sostenida" />
+    </div>
+  </section>
+
+  <div id="popup" class="popup-form">
+    <form action="https://formspree.io/f/xbjnzvvz" method="POST">
+      <input type="text" name="name" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu email" required />
+      <textarea name="message" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+      <span class="cerrar" onclick="cerrarPopup()">X</span>
+    </form>
+  </div>
+</body>
+</html>
