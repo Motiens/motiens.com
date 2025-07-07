@@ -1,2 +1,1 @@
-
-console.log("MOTIENS sitio cargado");
+// script opcional

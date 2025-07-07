@@ -1,52 +1,128 @@
-
 body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #111;
-    color: white;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fffaf6;
+  color: #1a1a1a;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: black;
+.hero {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
 }
-.logo img {
-    height: 150px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#servicios {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    background: #222;
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.hero-buttons {
+  margin-top: 20px;
+}
+.btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.btn-primary {
+  background-color: #ff6a3d;
+  color: white;
+}
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.logo-hero {
+  max-width: 250px;
+}
+.proposito {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: white;
+  font-size: 1.1em;
+}
+.servicios {
+  padding: 60px 20px;
+  background-color: #f9f2eb;
+  text-align: center;
+}
+.servicios-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
 }
 .servicio {
-    text-align: center;
-    max-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 .servicio img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 1rem;
+  width: 40px;
+  margin-bottom: 10px;
 }
-button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background: white;
-    color: black;
-    border: none;
-    cursor: pointer;
+.servicio ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
 }
-#metodologia {
-    text-align: center;
-    padding: 2rem;
+.metodologia {
+  padding: 60px 20px;
+  text-align: center;
 }
-.pasos {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.metodologia-diagrama {
+  max-width: 400px;
+  margin-top: 30px;
 }
-.paso img {
-    width: 80px;
-    height: auto;
+.contacto {
+  background-color: #000;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+.contacto button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6a3d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }

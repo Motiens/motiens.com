@@ -1,48 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>MOTIENS</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>MOTIENS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="text">
-            <h1>Despertamos tu potencial</h1>
-            <p>Facilitación estratégica y experiencial para transformar equipos desde su núcleo.</p>
+  <section class="hero">
+    <div class="nav">
+      <h1>MOTIENS.</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#metodologia">Metodología</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Activamos el desempeño y potencial de los equipos</h2>
+        <p>Facilitación estratégica y experiencial para transformar equipos desde su núcleo.</p>
+        <div class="hero-buttons">
+          <a href="#servicios" class="btn-primary">Nuestros servicios</a>
+          <a href="#contacto" class="btn-secondary">Contacto</a>
         </div>
-        <div class="logo">
-            <img src="logo.png" alt="Logo MOTIENS"/>
-        </div>
-    </header>
+      </div>
+      <img src="logo.png" alt="Logo MOTIENS" class="logo-hero">
+    </div>
+  </section>
 
-    <section id="servicios">
-        <div class="servicio">
-            <img src="grupo.png" alt="Refocus">
-            <h2>Refocus</h2>
-            <p>Redefiní el rumbo del equipo. Ideal para redefinir prioridades y alinear objetivos.</p>
-            <button>Quiero este servicio</button>
-        </div>
-        <div class="servicio">
-            <img src="ojo.png" alt="Reshape">
-            <h2>Reshape</h2>
-            <p>Reconfigurá dinámicas internas. Ideal para conflictos o roles poco claros.</p>
-            <button>Quiero este servicio</button>
-        </div>
-    </section>
+  <section class="proposito">
+    <p><strong>MOTIENS</strong> viene del latín <em>“movere”</em>: poner en movimiento. No cualquier movimiento. El nuestro desbloquea lo que está trabado, despierta lo que está dormido y reorganiza lo que está disperso.</p>
+  </section>
 
-    <section id="metodologia">
-        <h2>Nuestra metodología</h2>
-        <div class="pasos">
-            <div class="paso"><img src="activacion.png" alt="Paso 1"/><p>Paso 1</p></div>
-            <div class="paso"><img src="diagnostico.png" alt="Paso 2"/><p>Paso 2</p></div>
-            <div class="paso"><img src="transformacion.png" alt="Paso 3"/><p>Paso 3</p></div>
-            <div class="paso"><img src="engranaje.png" alt="Paso 4"/><p>Paso 4</p></div>
-        </div>
-    </section>
+  <section id="servicios" class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-container">
+      <div class="servicio">
+        <img src="ojo.png" alt="Icono Refocus">
+        <h3>REFOCUS</h3>
+        <p>Claridad para avanzar con dirección</p>
+        <ul>
+          <li>✔ Dispersión o falta de claridad</li>
+          <li>✔ Procesos de cambio</li>
+          <li>✔ Redefinir prioridades</li>
+        </ul>
+      </div>
+      <div class="servicio">
+        <img src="engranaje.png" alt="Icono Reshape">
+        <h3>RESHAPE</h3>
+        <p>Coherencia entre querer y hacer</p>
+        <ul>
+          <li>✔ Fallas en ejecución</li>
+          <li>✔ Cambio o crecimiento</li>
+          <li>✔ Nuevos marcos de colaboración</li>
+        </ul>
+      </div>
+      <div class="servicio">
+        <img src="grupo.png" alt="Icono Rebuild">
+        <h3>REBUILD</h3>
+        <p>Reconstrucción del equipo</p>
+        <ul>
+          <li>✔ Tensiones interpersonales</li>
+          <li>✔ Confianza deteriorada</li>
+          <li>✔ Fortalecer cohesión</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="metodologia" class="metodologia">
+    <h2>Nuestra Metodología</h2>
+    <img src="diseno.png" alt="Metodología MOTIENS" class="metodologia-diagrama">
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Listo para activar el potencial de tu equipo?</p>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo" required>
+      <textarea placeholder="Mensaje" rows="4"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 </body>
 </html>
